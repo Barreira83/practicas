@@ -1,0 +1,280 @@
+
+
+@media screen and (max-width: 500px){
+    /* En la media query, añade el selector #intro para tener un tamaño de fuente de 1.2rem y un espaciado entre líneas de 1.5.
+
+Dentro de la misma media query, ajusta la clase "cabecera-gris" para tener un tamaño de fuente de 2rem. */
+
+    html {font-size: 12px;  }
+
+    #intro {
+        font-size: 1.2rem;
+        letter-spacing: 1.5;
+    }
+
+    .cabecera-gris {
+        font-size: 2rem;
+    }
+
+    header h1 {margin-left: 1rem;}
+
+    nav ul{
+        margin-right: 1rem;
+        gap:10px;
+    }
+/* Para la etiqueta main, agrega una regla que distribuya sus elementos de forma equitativa a lo largo del eje principal (justify-content: space-evenly. */
+    main {
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+    .listas li {
+        margin-left: 1.5rem;
+    }    
+
+    }
+    
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    font-family: Arial, sans-serif;    
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+input [type="text"],input [type="email"], textarea  {
+    width: 100%;}
+
+/* 2. Centra el contenido del body de cada página añadiendo margin: 0 auto; a su regla CSS. */
+body {
+    margin: 0 auto;
+    background-color: #bcb;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+/* 1. Para el selector de main, usa calc() para establecer una altura mínima calculada restando la altura del header y la altura del footer al 100vh (en este ejemplo: 100vh - 4.5rem - 2rem). */
+    /* 
+Para la etiqueta main, agrega una regla que distribuya sus elementos de forma equitativa a lo largo del eje principal (justify-content: space-evenly.
+
+*/
+main {
+    justify-content: space-evenly;
+    min-height: calc(100vh-4.5rem-2rem);
+    padding: 2em;
+    background-color: white;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+ }
+ 
+header nav ul li a:hover {
+background-color: #555;
+border-radius: 5px;
+}
+
+nav ul{
+    margin-right: 3rem;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    padding:0.5rem 1rem ;
+}
+
+header {    
+    background-color: #333;
+    color: white;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;  
+    transition: background-color 1000ms ease;
+ }
+
+ /* 3. Crea una transición del color de fondo para los enlaces del header que dure 1 segundo cuando se pase el mouse sobre ellos. */
+ header nav ul li a:hover{
+    transition-property: background-color;
+    transition-duration: 1000ms;
+    background-color: #cc1717;
+ }
+
+/* 
+4. Diseña una animación en una clase y asígnala a la etiqueta <h2> en la página index.html. En el ejemplo se utiliza la siguiente animación: */
+/* A la clase "cabecera-gris", añade un tamaño de fuente de 3rem.
+
+A la misma clase "cabecera-gris", añade un 'padding' de 1rem en la parte superior e inferior y 2rem en los lados. */
+ .cabecera-gris {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    color: grey;
+
+    animation: cabecera-gris 2s infinite;
+    cursor: pointer;
+  }
+  
+  @keyframes cabecera-gris {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1.4);
+    }
+  }
+
+ header h1 {
+    margin-left: 3rem;
+ } 
+
+ /* Al selector #intro (párrafo de "index.html"), incrementa el tamaño de la fuente a 1.5rem  y establece un espaciado entre líneas de 1.8. */
+
+#intro {
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 1.8;
+}
+
+
+
+#jack {
+    width: 200px;
+    border: 4px solid lightgray;
+    border-radius: 50%;
+}
+
+iframe {
+    border: 2px solid black;
+    border-radius:10px;
+    width: 60%;
+}
+
+.listas {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem;
+    min-width: 80%;
+}
+
+.listas li {
+    margin-left: 3em;
+}
+
+address {
+    margin: 1em;
+}
+
+fieldset {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+body {
+    background-color: #bcb;
+    min-width: 1200px;
+    min-height: 100vh;
+}
+
+#inicio{    
+    background-image: url('./imgenes/image.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;      
+}
+
+/* 5. Para el selector #bg-inicio centra su contenido configurando display: flex, flex-direction: column, justify-content: center y align-items: center.  
+6. Por último, realiza algunos ajustes finales: */
+#bg-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.8);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header li, form li {
+    list-style: none;
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttons {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.buttons button{
+     border:none;
+     width: 100%;
+     padding: 0.7rem;
+     color: white;
+     background-color: #666;
+     font-size: 1rem;
+     border-radius: 5px; 
+     justify-content: center;  
+}
+
+.buttons li{
+    width: 49%; 
+    
+}
+
+.buttons button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+
+input, textarea {
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: whitesmoke; 
+}
+
+.one-line {
+
+    display: flex;
+    align-items: baseline;
+}
+

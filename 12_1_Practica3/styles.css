@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p::after {
+    content: 'Ver más';
+    color: red;
+}
+ main {
+    padding: 2em;
+    background-color: white;    
+ }
+
+ header {
+    margin: 1.5em;
+ }
+
+#intro {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.cabecera-gris {
+    color: grey;
+}
+
+#jack {
+    width: 200px;
+    border: 4px green;
+    border-radius: 50%;
+}
+
+iframe {
+    border: 2px red;
+    border-radius:10px;
+}
+
+.listas {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    min-width: 60%;
+}
+
+.listas li {
+    margin-left: 3em;
+}
+
+address {
+    margin: 1em;
+}
+
+fieldset {
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+body {
+    background-color: #bcb;
+    min-width: 1200px;
+    min-height: 100vh;
+}
+
+#inicio{    
+    background-image: url('./imgenes/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;      
+}
+
+#bg-inicio {
+    width: 50%;
+    min-width: 300px;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.8);
+}
+/* Sigue las instrucciones:
+
+
+
+
+Define una regla para la etiqueta <html> que fije la familia de fuentes en Arial, y sans-serif como alternativa. En la misma regla, define el tamaño de fuente a 16px.
+
+
+
+2. Incrementa el espacio entre líneas añadiendo un interlineado de 1.5 a la regla del selector html.
+
+
+
+3. Reemplaza los valores de 'margin' y 'padding' en las reglas CSS existentes, cambiándolos de píxeles a la unidad relativa rem (por ejemplo, 16px se convierte en 1rem, 24px en 1.5rem, 32px en 2rem, etc.).
+
+
+
+4. Establece un selector para body y asigna un color de fondo a #bcb o cualquier otro a tu elección.
+
+
+
+5. Para el body, establece un ancho máximo de 1200px y una altura mínima de 100vh.
+
+
+
+6. Asigna un color de fondo blanco a la etiqueta <main>.
+
+
+
+7. En el main de index.html, añade un atributo 'id' con el nombre "inicio". Crea una regla para este 'id' que incluya una imagen de fondo (no olvides colocar la imagen en la carpeta imagenes), asegúrate de que la imagen no se repita y que cubra todo el espacio. Para este ejemplo, hemos añadido la siguiente imagen de fondo:
+
+8. Por último, para mejorar la legibilidad del texto en la página index.html sobre el fondo, coloca la imagen, el título <h2> y el párrafo dentro de un contenedor genérico (<div>). Asigna al <div> un 'id' llamado "bg-inicio" y define las siguientes propiedades:  
+ 1. Establece un ancho al 50% del elemento padre.  
+ 2. Configura un ancho mínimo de 300px.  
+ 3. Define un 'border-radius' de 10px.  
+ 4. Configura el color del texto en blanco.  
+ 5. Establece un 'margin' a auto.  
+ 6. Define un 'padding' de 2rem.  
+ 7. Configura el color de fondo a negro con transparencia: rgba(0,0,0,0.8). 
+
+
+
+
+*/

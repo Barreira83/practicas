@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Añade a la regla CSS de main las propiedades display: flex, flex-direction: column, y align-items: center. */
+main {
+    padding: 2em;
+    background-color: white;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+ }
+ /*
+3. Mejora el diseño del <header> de esta manera:
+1. Establece el color de fondo a #333.
+2. Configura el color de texto en blanco.
+3. Establece la altura a 4.5rem.
+4. Configura el tamaño de la fuente a 1.4rem.
+5. Usa display: flex, justify-content: space-between, y align-items: center.
+6. Añade un margen izquierdo de 3rem al <h1> dentro del <header>.
+7. Agrega un margen derecho de 3rem, display: flex y un 'gap' de 20px a la lista desordenada (<ul>) dentro del <nav>.
+8. Personaliza los enlaces del menú del <nav> con padding: 0.5rem 1rem.
+9. Crea un selector para el evento :hover en los enlaces anteriores, cambiando el color de fondo a #555 y añadiendo un 'border-radius' de 5px.
+10. Elimina la declaración creada anterior en el <header> que asignaba un margen inferior de 1.5rem. */
+a:hover {
+background-color: #555;
+border-radius: 5px;
+}
+
+nav ul{
+    margin-right: 3rem;
+    display: flex;
+    gap: 20px;
+}
+
+nav {
+    padding:0.5rem 1rem ;
+}
+
+header {    
+    background-color: #333;
+    color: white;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+
+ header h1 {
+    margin-left: 3rem;
+ }
+
+ 
+
+#intro {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.cabecera-gris {
+    color: grey;
+}
+
+#jack {
+    width: 200px;
+    border: 4px green;
+    border-radius: 50%;
+}
+
+iframe {
+    border: 2px red;
+    border-radius:10px;
+}
+
+.listas {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    min-width: 60%;
+}
+
+.listas li {
+    margin-left: 3em;
+}
+
+address {
+    margin: 1em;
+}
+
+fieldset {
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+body {
+    background-color: #bcb;
+    min-width: 1200px;
+    min-height: 100vh;
+}
+
+#inicio{    
+    background-image: url('./imgenes/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;      
+}
+
+#bg-inicio {
+    width: 50%;
+    min-width: 300px;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*Define 'text-decoration' como "none" y el color del texto como blanco para todos los enlaces (<a>).*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*2. Configura 'list-style' como "none" para las listas desordenadas (<ul>) dentro del <header> o del <form>. No hagas esto para las listas "Intereses" y "Habilidades". */
+header ul, form ul {
+    list-style: none;
+    
+}
+/* 4. Personaliza el <footer> con las siguientes propiedades:
+
+Color de fondo igual que en el <header>, #333.
+
+Color de texto blanco.
+
+Altura: 2rem.
+
+Configura display: flex, justify-content: center, y align-items: center. */
+footer {
+    background-color: #333;
+    color: white;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* En contact.html, crea un menú (lista desordenada) con dos <li> para contener los dos botones del formulario y asígnale la clase de "buttons". Crea una regla para esta clase con los atributos de display:flex y justify-content: space-between.*/
+
+.buttons {
+    display: flex; 
+    justify-content: space-between;
+}
+/* Crea una nueva regla para los botones que se encuentren dentro de la clase "buttons" con las siguientes propiedades:
+border: none; width: 100%; padding: 0.7rem; color: white; background-color: #666; font-size: 1rem; border-radius: 5px;   */ 
+.buttons button{
+     border:none;
+     width: 100%;
+     padding: 0.7rem;
+     color: white;
+     background-color: #666;
+     font-size: 1rem;
+     border-radius: 5px; 
+     justify-content: center;  /*Tiven que añadir esto para que o texto quedara centrado*/
+     
+}
+
+/* Crea una regla CSS que asigne un ancho para cada elemento <li> de la clase "buttons" en el  49% del ancho de su contenedor padre.                       Cambiar esto */
+.buttons li{
+    width: 49%; 
+    
+}
+
+/* Crea una regla para los botones anteriores en estado :hover que cambie el color de fondo a #555 y aplique la propiedad cursor: pointer. */
+.buttons button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+/* 10. Aplica una regla a los inputs en general y al textarea con las siguientes propiedades:
+1.  padding: 0.2rem 0.5rem;
+2.  margin-bottom: 0.7rem;
+3.  display: block;
+4.  font-size: 1rem;
+5.  border: none;
+6.  border-radius: 3px;
+7.  background-color: whitesmoke; */
+input, textarea {
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: whitesmoke; /*este color nn se ve igual, parece invisible*/
+}
+
+.one-line {
+
+    display: flex;
+    align-items: baseline;
+}
+/*
+11. Crea una regla para una nueva clase llamada "one-line" y ponle las propiedades de display:flex y align-items: baseline, y asigna a los ítems del formulario que consideres que debe abarcar una sola línea (por ejemplo: campo de radio buttons, campo con select…) */
+
+
+
+/* Problemas: 
+-Texto jack h1 parece mais grande no resultado que teño que conseguir, pero non vexo que pida aumentar nas instruccions
+
+-Para que o text dos botons queden centrados, Enviar e Limpar do formulario, tiven que poñer atrib justify-content: center; se nn non quedaba igual que o resultado esperado
+
+-Sobre mi as listas quedan centradas, nn sei onde pide que faga eso????
+
+-background-color: whitesmoke; este color nn se ve igual, parece invisible
+
+
+*/

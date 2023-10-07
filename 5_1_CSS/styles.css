@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ main {
+    padding: 32px;
+ }
+
+ header {
+    margin: 24px;
+ }
+
+#intro {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.cabecera-gris {
+    color: grey;
+}
+
+#jack {
+    width: 200px;
+    border: 4px green;
+    border-radius: 50%;
+}
+
+iframe {
+    border: 2px red;
+    border-radius:10px;
+}
+
+.listas {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 16px;
+    min-width: 60%;
+}
+/* Quiero apuntar solo a las listas dentro de la 
+clase listas pero no me sale */
+.listas li {
+    margin-left: 48px;
+}
+
+address {
+    margin: 16px;
+}
+
+fieldset {
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+/* Ahora toca practicar con el modelo de cajas y la regla CSS Reset.
+
+Al inicio de tu archivo CSS, implementa una regla CSS Reset que elimine los márgenes y 'padding' predeterminados del navegador. Además, asegúrate de que esta regla establezca la propiedad 'box-sizing' a "border-box".
+
+2. Aplica un 'padding' de 32px a la etiqueta <main> en todas las páginas del sitio.
+
+3. Crea una regla CSS que proporcione un margen de 24px de separación entre el <header> y el siguiente elemento. 
+4. En la página about.html realiza las siguientes acciones:
+
+Asigna la clase "listas" a las secciones que contienen las listas "Intereses" y "Habilidades".
+
+Crea una regla CSS para la clase "listas" que defina un margin de 24px en la parte superior e inferior y 0 en los lados, así como un 'padding' de 16px y un ancho mínimo del 60%.
+
+Para los ítems (<li>) dentro de las secciones de la clase "listas", establece un margen izquierdo de 48px. 
+
+En 'contact.html', realiza las siguientes acciones:
+
+Aplica una regla CSS a la etiqueta <address> que defina un margen de 16px en todos los lados.
+
+Establece una regla CSS para los <fieldset> que incluya un margen inferior de 24px y un 'padding' de 16px. */
+

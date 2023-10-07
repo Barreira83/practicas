@@ -1,0 +1,261 @@
+/* En esta parte de la práctica, trabajarás un poco con media queries para dispositivos móviles.
+
+Diseña una media query para pantallas pequeñas con un máximo de 500px. (En este caso lo haremos así, ya que por comodidad hemos estado haciendo las prácticas en versión desktop, pero recuerda que es buena práctica empezar por la versión para dispositivos móviles y aplicar la media query para pantallas de un ancho mínimo). 
+
+Dentro de la media query, aplica las siguientes reglas:
+
+Configura el tamaño de la fuente de html a 12px.
+
+Ajusta el <h1> en el <header> con un 'margin-left' de 1rem.
+
+Configura el <ul> en el <nav> con un 'margin-right' de 1rem junto un espaciado ('gap') de 10px.
+
+Ajusta el 'padding' del selector main en 1rem.
+
+Establece un ancho del 90% para el iframe.
+
+A los ítems (<li>) de la lista con la clase "lista", asigna un 'margin-left' de 1.5rem. 
+
+Asegúrate de que los campos input de tipo "text" y tipo "email", así como al textarea, tengan un ancho del 100% en todas las pantallas. 
+
+Comprueba con las Herramientas de Desarrollador del navegador si las reglas se aplican correctamente en pantallas con un ancho inferior a 500px. 
+
+Resuelve el problema con el iframe en la página about.html para pantallas con un ancho superior a 500px, asignándole un ancho del 60% del contenedor padre.
+
+ */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    font-family: Arial, sans-serif;    
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+input [type="text"],input [type="email"], textarea  {
+    width: 100%;}
+
+body {
+    background-color: #bcb;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+main {
+    padding: 2rem;
+    background-color: white;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+ }
+ 
+
+
+nav ul{
+    margin-right: 3rem;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    padding:0.5rem 1rem ;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    }
+
+header {    
+    background-color: #333;
+    color: white;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+
+ header h1 {
+    margin-left: 3rem;
+ } 
+
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header li, form li {
+    list-style: none;
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#intro {
+    font-style: italic;
+    font-size: 1.2rem;
+} 
+
+.cabecera-gris {
+    color: grey;
+}
+
+
+
+#jack {
+    width: 200px;
+    border: 4px solid lightgray;
+    border-radius: 50%;
+}
+
+#inicio{    
+    
+    background-image: url('./imgenes/image.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;      
+}
+
+#bg-inicio {    
+    width: 50%;
+    min-width: 300px;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.listas {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    min-width: 80%;
+}
+
+.listas li {
+    margin-left: 3rem;
+}
+
+iframe {
+    border: 2px solid black;
+    border-radius:10px;
+    width: 60%;
+}
+
+address {
+    margin: 1rem;
+}
+
+fieldset {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.buttons {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.buttons button{
+     border:none;
+     width: 100%;
+     padding: 0.7rem;
+     color: white;
+     background-color: #666;
+     font-size: 1rem;
+     border-radius: 5px; 
+     justify-content: center;  
+}
+
+.buttons li{
+    width: 49%; 
+    
+}
+
+.buttons button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+
+input, textarea {
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: whitesmoke; 
+}
+
+.one-line {
+    display: flex;
+    align-items: baseline;
+}
+
+input[type="text"], input [type="email"], textarea {
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        
+        background-color: rgb(188, 193, 151);
+}
+@media screen and (max-width: 10000px) {
+    body {
+        
+        background-color: rgb(142, 200, 211);
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+    html {font-size: 12px;  }
+
+    header h1 {margin-left: 1rem;}
+
+    nav ul{
+        margin-right: 1rem;
+        gap:10px;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+    .listas li {
+        margin-left: 1.5rem;
+    }    
+
+    }}
+    
