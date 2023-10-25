@@ -117,15 +117,3 @@ getCharacterData(2);
 
 // Crea un módulo para gestionar tareas:
 
-// Crea un archivo llamado tareas.js y define las funciones para agregar, eliminar y listar tareas. Cada tarea debe ser un objeto con dos propiedades: id y task. Cuando se añade una tarea, debe generar automáticamente un id único para cada tarea. Cuando se elimina una tarea, se debe buscar dicha tarea por id. Exporta estas funciones utilizando la sintaxis de módulos ES6.
-
-// Crea un archivo llamado appTareas.js e importa las funciones del módulo tareas.js. Utiliza las funciones importadas para agregar, eliminar y listar tareas. Cuando elimines una tarea, recuerda que ahora debes pasar el id de la tarea en lugar del texto de la tarea. Para poner a prueba tu código, puedes agregar las siguientes tareas:
-
-// 'Hacer la compra'
-
-// 'Estudiar JavaScript'
-
-// 'Hacer ejercicio'.
-
-// No olvides agregar en index.html la etiqueta <script> y que appTareas.js es de tipo "module". Comprueba en la consola el resultado.
-//<script src="./appTareas.js" type="module"></script>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 - DOM | CodingRooms</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        padding: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 1rem;
+      }
+
+      .important {
+        padding: 1rem;
+        margin: 0.5rem 0;
+      }
+
+      .list-item {
+        font-weight: bold;
+      }
+
+      .active {
+        color: white;
+        background-color: navy;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Título principal</h1>
+    <p class="important">Párrafo importante 1</p>
+    <p class="important">Párrafo importante 2</p>
+    <p>Este es un párrafo normal</p>
+    <section id="content">
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+    </section>
+    <script src="./trabajandoNodos.js"></script>
+  </body>
+</html>
